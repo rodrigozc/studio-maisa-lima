@@ -1,0 +1,78 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "studio-maisa-lima"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "../node_modules/font-awesome/fonts/FontAwesome.otf",
+        "../node_modules/font-awesome/fonts/fontawesome-webfont.eot",
+        "../node_modules/font-awesome/fonts/fontawesome-webfont.svg",
+        "../node_modules/font-awesome/fonts/fontawesome-webfont.ttf",
+        "../node_modules/font-awesome/fonts/fontawesome-webfont.woff",
+        "../node_modules/font-awesome/fonts/fontawesome-webfont.woff2",
+        "assets",
+        "favicon.ico",
+        "favicon*.png",
+        "apple-icon*.png",
+        "android-icon*.png"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/font-awesome/css/font-awesome.css",
+        "styles.css",
+        "fonts.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/jquery-easing/dist/jquery.easing.1.3.umd.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "scripts/cbpAnimatedHeader.js",
+        "scripts/freelancer.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
